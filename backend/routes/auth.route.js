@@ -12,6 +12,10 @@ import upload from "../utils/multer.js"
 
 const router = express.Router()
 
+router.get('/', (req, res) => {
+  res.send('Backend is running 🚀');
+});
+
 router.post("/sign-up", signup)
 
 router.post("/sign-in", signin)
